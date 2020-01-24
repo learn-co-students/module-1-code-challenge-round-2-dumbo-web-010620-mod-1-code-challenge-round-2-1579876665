@@ -23,4 +23,9 @@ puts "Creating reviews..."
 # *****************************************************************
 # Create Reviews Here
 
+r1 = Review.create(star_rating: 20, comment: "good", product_id: product1.id, user_id: user1.id)
+r2 = Review.create(star_rating: 10, comment: "average", product_id: product2.id, user_id: user2.id)
+r3 = Review.create(star_rating: 5, comment: "poor", product_id: product2.id, user_id: user1.id)
+r4 = Review.create(star_rating: 3, comment: "bad", product_id: product3.id, user_id: user2.id)
+r5 = Review.create(star_rating: 1, comment: "terrible", product_id: product3.id, user_id: user3.id)
 puts "Seeding done!"
